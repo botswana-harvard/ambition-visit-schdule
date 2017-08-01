@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'edc_map.apps.AppConfig',
+    'ambition_labs.apps.AppConfig',
     'ambition_visit_schedule.apps.AppConfig',
 ]
 

@@ -1,7 +1,7 @@
 from edc_visit_schedule.visit import Requisition
 
-from ..labs import (viral_load_panel, cd4_panel, fbc_panel, csf_panel,
-                    chemistry_alt_panel, chemistry_panel)
+from ambition_labs.labs import (viral_load_panel, cd4_panel, fbc_panel, csf_panel,
+                                chemistry_alt_panel, chemistry_panel)
 
 requisitions = ()
 
