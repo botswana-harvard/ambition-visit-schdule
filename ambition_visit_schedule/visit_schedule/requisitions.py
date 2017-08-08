@@ -3,7 +3,9 @@ from edc_visit_schedule import FormsCollection, Requisition
 from ambition_labs.labs import (viral_load_panel, cd4_panel, fbc_panel, csf_panel,
                                 chemistry_alt_panel, chemistry_panel)
 
-requisitions = FormsCollection()
+requisitions = FormsCollection(Requisition(
+    show_order=50, model='ambition_subject.subjectrequisition',
+    panel=chemistry_alt_panel, required=False, additional=False),)
 
 requisitions_d1 = FormsCollection(
     Requisition(
