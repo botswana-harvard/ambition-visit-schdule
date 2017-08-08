@@ -5,7 +5,7 @@ from .crfs import (
     crfs_d5, crfs_d1, crfs_d3, crfs_d7, crfs_d10, crfs_d12, crfs_d14,
     crfs_w4, crfs_w6, crfs_w8, crfs_w10, crfs_w16, crfs_unscheduled)
 from .requisitions import (requisitions, requisitions_d1, requisitions_d3,
-                           requisitions_d7, requisitions_w4, requisitions_unscheduled)
+                           requisitions_d7, requisitions_w4)
 
 # schedule for new participants
 schedule1 = Schedule(
@@ -139,7 +139,7 @@ visit9999 = Visit(
     title='Unscheduled',
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions_unscheduled,
+    requisitions=requisitions,
     crfs=crfs_unscheduled)
 
 schedule1.add_visit(visit=visit0)
