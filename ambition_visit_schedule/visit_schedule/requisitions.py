@@ -1,11 +1,11 @@
-from edc_visit_schedule.visit import Requisition
+from edc_visit_schedule import FormsCollection, Requisition
 
 from ambition_labs.labs import (viral_load_panel, cd4_panel, fbc_panel, csf_panel,
                                 chemistry_alt_panel, chemistry_panel)
 
-requisitions = ()
+requisitions = FormsCollection()
 
-requisitions_d1 = (
+requisitions_d1 = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
         panel=viral_load_panel, required=False, additional=False),
@@ -23,13 +23,13 @@ requisitions_d1 = (
         panel=chemistry_alt_panel, required=True, additional=False),
 )
 
-requisitions_d3 = (
+requisitions_d3 = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
         panel=chemistry_panel),
 )
 
-requisitions_d7 = (
+requisitions_d7 = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
         panel=chemistry_alt_panel, required=True, additional=False),
@@ -41,7 +41,7 @@ requisitions_d7 = (
         panel=csf_panel, required=True, additional=False),
 )
 
-requisitions_w4 = (
+requisitions_w4 = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=True, additional=False),
@@ -49,5 +49,3 @@ requisitions_w4 = (
         show_order=20, model='ambition_subject.subjectrequisition',
         panel=chemistry_alt_panel, required=True, additional=False),
 )
-
-requisitions_unscheduled = ()

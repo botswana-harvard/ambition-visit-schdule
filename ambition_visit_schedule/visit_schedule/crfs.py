@@ -1,6 +1,6 @@
-from edc_visit_schedule.visit import Crf
+from edc_visit_schedule import FormsCollection, Crf
 
-crfs_d1 = (
+crfs_d1 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.patienthistory'),
     Crf(show_order=3, model='ambition_subject.bloodresult'),
@@ -23,7 +23,7 @@ crfs_d1 = (
     Crf(show_order=16, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_d3 = (
+crfs_d3 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.prnmodel'),
@@ -46,7 +46,7 @@ crfs_d3 = (
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_d5 = (
+crfs_d5 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.prnmodel'),
@@ -69,7 +69,7 @@ crfs_d5 = (
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_d7 = (
+crfs_d7 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.lumbarpuncturecsf'),
@@ -91,7 +91,7 @@ crfs_d7 = (
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_d10 = (
+crfs_d10 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.prnmodel'),
@@ -114,7 +114,7 @@ crfs_d10 = (
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_d12 = (
+crfs_d12 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.prnmodel'),
@@ -137,7 +137,7 @@ crfs_d12 = (
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_d14 = (
+crfs_d14 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.bloodresult'),
     Crf(show_order=3, model='ambition_subject.lumbarpuncturecsf'),
@@ -160,7 +160,7 @@ crfs_d14 = (
     Crf(show_order=15, model='ambition_subject.recurrencesymptom',
         required=False),)
 
-crfs_w4 = (
+crfs_w4 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.week4'),
     Crf(show_order=3, model='ambition_subject.bloodresult'),
@@ -183,7 +183,7 @@ crfs_w4 = (
         required=False),
     Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False))
 
-crfs_w6 = (
+crfs_w6 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.followup'),
     Crf(show_order=3, model='ambition_subject.recurrencesymptom',
@@ -206,7 +206,7 @@ crfs_w6 = (
         required=False),
     Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False))
 
-crfs_w8 = (
+crfs_w8 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.followup'),
     Crf(show_order=3, model='ambition_subject.recurrencesymptom',
@@ -229,7 +229,7 @@ crfs_w8 = (
         required=False),
     Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False))
 
-crfs_w10 = (
+crfs_w10 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
     Crf(show_order=2, model='ambition_subject.followup'),
     Crf(show_order=3, model='ambition_subject.studyterminationconclusion'),
@@ -254,9 +254,9 @@ crfs_w10 = (
         required=False),
     Crf(show_order=16, model='ambition_subject.deathreporttmg2', required=False))
 
-crfs_w16 = (Crf(show_order=1, model='ambition_subject.week16'),)
+crfs_w16 = FormsCollection(Crf(show_order=1, model='ambition_subject.week16'),)
 
-crfs_unscheduled = (
+crfs_unscheduled = FormsCollection(
     Crf(show_order=1, model='ambition_subject.prnmodel'),
     Crf(show_order=2,
         model='ambition_subject.adverseevent', required=False),
