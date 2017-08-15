@@ -22,8 +22,10 @@ visit0 = Visit(
     rbase=relativedelta(days=0),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
+    crfs=crfs_d1,
     requisitions=requisitions_d1,
-    crfs=crfs_d1)
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit1 = Visit(
     code='1003',
@@ -33,7 +35,9 @@ visit1 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_d3,
-    crfs=crfs_d3)
+    crfs=crfs_d3,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit2 = Visit(
     code='1005',
@@ -43,7 +47,9 @@ visit2 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_d3,
-    crfs=crfs_d5)
+    crfs=crfs_d5,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit3 = Visit(
     code='1007',
@@ -53,7 +59,9 @@ visit3 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_d7,
-    crfs=crfs_d7)
+    crfs=crfs_d7,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit4 = Visit(
     code='1010',
@@ -63,7 +71,9 @@ visit4 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_d3,
-    crfs=crfs_d10)
+    crfs=crfs_d10,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit5 = Visit(
     code='1012',
@@ -73,7 +83,9 @@ visit5 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
     requisitions=requisitions_d3,
-    crfs=crfs_d12)
+    crfs=crfs_d12,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit6 = Visit(
     code='1014',
@@ -83,7 +95,9 @@ visit6 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=6),
     requisitions=requisitions_d7,
-    crfs=crfs_d14)
+    crfs=crfs_d14,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit7 = Visit(
     code='1028',
@@ -93,7 +107,9 @@ visit7 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=6),
     requisitions=requisitions_w4,
-    crfs=crfs_w4)
+    crfs=crfs_w4,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit8 = Visit(
     code='1042',
@@ -103,7 +119,9 @@ visit8 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=6),
     requisitions=requisitions,
-    crfs=crfs_w6)
+    crfs=crfs_w6,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit9 = Visit(
     code='1056',
@@ -113,7 +131,9 @@ visit9 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=6),
     requisitions=requisitions,
-    crfs=crfs_w8)
+    crfs=crfs_w8,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit10 = Visit(
     code='1070',
@@ -123,7 +143,9 @@ visit10 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=6),
     requisitions=requisitions,
-    crfs=crfs_w10)
+    crfs=crfs_w10,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 visit16 = Visit(
     code='1112',
@@ -133,15 +155,9 @@ visit16 = Visit(
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=6),
     requisitions=requisitions,
-    crfs=crfs_w16)
-
-visit_unscheduled = Visit(
-    code='9999',
-    title='Unscheduled',
-    rlower=relativedelta(days=0),
-    rupper=relativedelta(days=0),
-    requisitions=requisitions,
-    crfs=crfs_unscheduled)
+    crfs=crfs_w16,
+    crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions)
 
 schedule1.add_visit(visit=visit0)
 schedule1.add_visit(visit=visit1)
