@@ -135,7 +135,7 @@ visit16 = Visit(
     requisitions=requisitions,
     crfs=crfs_w16)
 
-visit9999 = Visit(
+visit_unscheduled = Visit(
     code='9999',
     title='Unscheduled',
     rlower=relativedelta(days=0),
