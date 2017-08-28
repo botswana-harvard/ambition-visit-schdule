@@ -31,7 +31,7 @@ requisitions_d1 = FormsCollection(
         show_order=70, model='ambition_subject.subjectrequisition',
         panel=serum_panel, required=True, additional=False),
     Requisition(
-        show_order=70, model='ambition_subject.subjectrequisition',
+        show_order=80, model='ambition_subject.subjectrequisition',
         panel=plasma_panel, required=True, additional=False),
 )
 
