@@ -255,7 +255,9 @@ crfs_w10 = FormsCollection(
         required=False),
     Crf(show_order=16, model='ambition_subject.deathreporttmg2', required=False))
 
-crfs_w16 = FormsCollection(Crf(show_order=1, model='ambition_subject.week16'),)
+crfs_w16 = FormsCollection(
+    Crf(show_order=1, model='ambition_subject.week16'),
+    Crf(show_order=2, model='ambition_subject.deathreport', required=False),)
 
 crfs_unscheduled = FormsCollection(
     Crf(show_order=1, model='ambition_subject.prnmodel'),
