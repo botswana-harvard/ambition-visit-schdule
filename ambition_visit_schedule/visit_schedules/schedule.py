@@ -26,7 +26,7 @@ visit0 = Visit(
     requisitions=requisitions_d1,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 visit1 = Visit(
     code='1003',
@@ -39,7 +39,7 @@ visit1 = Visit(
     crfs=crfs_d3,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 visit2 = Visit(
     code='1005',
@@ -52,7 +52,7 @@ visit2 = Visit(
     crfs=crfs_d5,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 visit3 = Visit(
     code='1007',
@@ -65,7 +65,7 @@ visit3 = Visit(
     crfs=crfs_d7,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 visit4 = Visit(
     code='1010',
@@ -78,7 +78,7 @@ visit4 = Visit(
     crfs=crfs_d10,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 visit5 = Visit(
     code='1012',
@@ -91,7 +91,7 @@ visit5 = Visit(
     crfs=crfs_d12,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 visit6 = Visit(
     code='1014',
@@ -169,7 +169,7 @@ visit16 = Visit(
     crfs=crfs_w16,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    allow_unscheduled=False)
+)
 
 schedule1.add_visit(visit=visit0)
 schedule1.add_visit(visit=visit1)
