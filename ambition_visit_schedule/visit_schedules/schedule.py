@@ -5,7 +5,7 @@ from .crfs import (
     crfs_d5, crfs_d1, crfs_d3, crfs_d7, crfs_d10, crfs_d12, crfs_d14,
     crfs_w4, crfs_w6, crfs_w8, crfs_w10, crfs_w16, crfs_unscheduled)
 from .requisitions import (requisitions, requisitions_d1, requisitions_d3,
-                           requisitions_d7, requisitions_w4)
+                           requisitions_d7, requisitions_w4, requisitions_other)
 
 # schedule for new participants
 schedule1 = Schedule(
@@ -48,7 +48,7 @@ visit2 = Visit(
     rbase=relativedelta(days=4),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions_d3,
+    requisitions=requisitions_other,
     crfs=crfs_d5,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
@@ -74,7 +74,7 @@ visit4 = Visit(
     rbase=relativedelta(days=9),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions_d3,
+    requisitions=requisitions_other,
     crfs=crfs_d10,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
@@ -87,7 +87,7 @@ visit5 = Visit(
     rbase=relativedelta(days=11),
     rlower=relativedelta(days=0),
     rupper=relativedelta(days=0),
-    requisitions=requisitions_d3,
+    requisitions=requisitions_other,
     crfs=crfs_d12,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
