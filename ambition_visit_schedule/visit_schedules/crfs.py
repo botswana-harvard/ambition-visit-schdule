@@ -21,7 +21,9 @@ crfs_d1 = FormsCollection(
     Crf(show_order=15, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=16, model='ambition_subject.recurrencesymptom',
-        required=False),)
+        required=False),
+    Crf(show_order=17, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_d3 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -44,7 +46,9 @@ crfs_d3 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
-        required=False),)
+        required=False),
+    Crf(show_order=15, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_d5 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -67,7 +71,9 @@ crfs_d5 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
-        required=False),)
+        required=False),
+    Crf(show_order=15, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_d7 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -89,6 +95,8 @@ crfs_d7 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
+        required=False),
+    Crf(show_order=15, model='ambition_subject.subjectoffstudy',
         required=False),)
 
 crfs_d10 = FormsCollection(
@@ -112,6 +120,8 @@ crfs_d10 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
+        required=False),
+    Crf(show_order=15, model='ambition_subject.subjectoffstudy',
         required=False),)
 
 crfs_d12 = FormsCollection(
@@ -135,7 +145,9 @@ crfs_d12 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
-        required=False),)
+        required=False),
+    Crf(show_order=15, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_d14 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -158,6 +170,8 @@ crfs_d14 = FormsCollection(
     Crf(show_order=14, model='ambition_subject.deathreporttmg2',
         required=False),
     Crf(show_order=15, model='ambition_subject.recurrencesymptom',
+        required=False),
+    Crf(show_order=16, model='ambition_subject.subjectoffstudy',
         required=False),)
 
 crfs_w4 = FormsCollection(
@@ -181,7 +195,9 @@ crfs_w4 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreport', required=False),
     Crf(show_order=14, model='ambition_subject.deathreporttmg1',
         required=False),
-    Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False))
+    Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False),
+    Crf(show_order=16, model='ambition_subject.subjectoffstudy',
+        required=False),)
 
 crfs_w6 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -204,7 +220,9 @@ crfs_w6 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreport', required=False),
     Crf(show_order=14, model='ambition_subject.deathreporttmg1',
         required=False),
-    Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False))
+    Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False),
+    Crf(show_order=16, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_w8 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -227,7 +245,9 @@ crfs_w8 = FormsCollection(
     Crf(show_order=13, model='ambition_subject.deathreport', required=False),
     Crf(show_order=14, model='ambition_subject.deathreporttmg1',
         required=False),
-    Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False))
+    Crf(show_order=15, model='ambition_subject.deathreporttmg2', required=False),
+    Crf(show_order=16, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_w10 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.clinicnote'),
@@ -252,11 +272,15 @@ crfs_w10 = FormsCollection(
         required=False),
     Crf(show_order=15, model='ambition_subject.deathreporttmg1',
         required=False),
-    Crf(show_order=16, model='ambition_subject.deathreporttmg2', required=False))
+    Crf(show_order=16, model='ambition_subject.deathreporttmg2', required=False),
+    Crf(show_order=17, model='ambition_subject.subjectoffstudy',
+        required=False))
 
 crfs_w16 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.week16'),
-    Crf(show_order=2, model='ambition_subject.deathreport', required=False),)
+    Crf(show_order=2, model='ambition_subject.deathreport', required=False),
+    Crf(show_order=3, model='ambition_subject.subjectoffstudy',
+        required=False),)
 
 crfs_unscheduled = FormsCollection(
     Crf(show_order=1, model='ambition_subject.prnmodel'),
@@ -280,4 +304,6 @@ crfs_unscheduled = FormsCollection(
         required=False),
     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
         required=False),
-    Crf(show_order=12, model='ambition_subject.deathreporttmg2', required=False))
+    Crf(show_order=12, model='ambition_subject.deathreporttmg2', required=False),
+    Crf(show_order=13, model='ambition_subject.subjectoffstudy',
+        required=False))
