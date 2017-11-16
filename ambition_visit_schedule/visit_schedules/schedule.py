@@ -26,6 +26,7 @@ visit0 = Visit(
     requisitions=requisitions_d1,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    allow_unscheduled=True,
 )
 
 visit1 = Visit(
