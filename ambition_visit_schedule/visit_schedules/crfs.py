@@ -3,7 +3,8 @@ from edc_visit_schedule import FormsCollection, Crf
 crfs_d1 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.patienthistory'),
     Crf(show_order=2, model='ambition_subject.medicalexpenses'),
-    Crf(show_order=3, model='ambition_subject.medicalexpensestwo'),
+    Crf(show_order=3, model='ambition_subject.medicalexpensestwo',
+        required=False),
     Crf(show_order=4, model='ambition_subject.educationalbackground'),
     Crf(show_order=5, model='ambition_subject.bloodresult'),
     Crf(show_order=6, model='ambition_subject.lumbarpuncturecsf'),
