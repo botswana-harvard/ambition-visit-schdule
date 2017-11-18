@@ -8,8 +8,8 @@ from .requisitions import (requisitions, requisitions_d1, requisitions_d3,
                            requisitions_d7, requisitions_w4, requisitions_other)
 
 # schedule for new participants
-schedule1 = Schedule(
-    name='schedule1',
+schedule = Schedule(
+    name='schedule',
     title='Ambition',
     enrollment_model='ambition_subject.enrollment',
     disenrollment_model='ambition_subject.disenrollment',
@@ -172,15 +172,15 @@ visit16 = Visit(
     requisitions_unscheduled=requisitions,
 )
 
-schedule1.add_visit(visit=visit0)
-schedule1.add_visit(visit=visit1)
-schedule1.add_visit(visit=visit2)
-schedule1.add_visit(visit=visit3)
-schedule1.add_visit(visit=visit4)
-schedule1.add_visit(visit=visit5)
-schedule1.add_visit(visit=visit6)
-schedule1.add_visit(visit=visit7)
-schedule1.add_visit(visit=visit8)
-schedule1.add_visit(visit=visit9)
-schedule1.add_visit(visit=visit10)
-schedule1.add_visit(visit=visit16)
+schedule.add_visit(visit=visit0)
+schedule.add_visit(visit=visit1)
+schedule.add_visit(visit=visit2)
+schedule.add_visit(visit=visit3)
+schedule.add_visit(visit=visit4)
+schedule.add_visit(visit=visit5)
+schedule.add_visit(visit=visit6)
+schedule.add_visit(visit=visit7)
+schedule.add_visit(visit=visit8)
+schedule.add_visit(visit=visit9)
+schedule.add_visit(visit=visit10)
+schedule.add_visit(visit=visit16)
