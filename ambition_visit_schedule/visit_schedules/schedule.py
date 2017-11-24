@@ -26,6 +26,7 @@ visit0 = Visit(
     requisitions=requisitions_d1,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic',
     allow_unscheduled=True,
 )
 
@@ -40,6 +41,7 @@ visit1 = Visit(
     crfs=crfs_d3,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic',
 )
 
 visit2 = Visit(
@@ -53,6 +55,7 @@ visit2 = Visit(
     crfs=crfs_d5,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic',
 )
 
 visit3 = Visit(
@@ -66,6 +69,7 @@ visit3 = Visit(
     crfs=crfs_d7,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic',
 )
 
 visit4 = Visit(
@@ -79,6 +83,7 @@ visit4 = Visit(
     crfs=crfs_d10,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic',
 )
 
 visit5 = Visit(
@@ -92,6 +97,7 @@ visit5 = Visit(
     crfs=crfs_d12,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic'
 )
 
 visit6 = Visit(
@@ -105,6 +111,7 @@ visit6 = Visit(
     crfs=crfs_d14,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='7-day clinic',
     allow_unscheduled=True)
 
 visit7 = Visit(
@@ -118,6 +125,7 @@ visit7 = Visit(
     crfs=crfs_w4,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='5-day clinic',
     allow_unscheduled=True)
 
 visit8 = Visit(
@@ -131,6 +139,7 @@ visit8 = Visit(
     crfs=crfs_w6,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='5-day clinic',
     allow_unscheduled=True)
 
 visit9 = Visit(
@@ -144,6 +153,7 @@ visit9 = Visit(
     crfs=crfs_w8,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='5-day clinic',
     allow_unscheduled=True)
 
 visit10 = Visit(
@@ -157,6 +167,7 @@ visit10 = Visit(
     crfs=crfs_w10,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
+    facility_name='5-day clinic',
     allow_unscheduled=True)
 
 visit16 = Visit(
@@ -169,6 +180,7 @@ visit16 = Visit(
     requisitions=requisitions,
     crfs=crfs_w16,
     crfs_unscheduled=crfs_unscheduled,
+    facility_name='5-day clinic',
     requisitions_unscheduled=requisitions,
 )
 
