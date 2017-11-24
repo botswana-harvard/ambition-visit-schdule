@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import sys
 
-from edc_device.constants import CENTRAL_SERVER
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 APP_NAME = 'ambition_visit_schedule'
@@ -131,8 +129,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
 GIT_DIR = BASE_DIR
-
-ANONYMOUS_ENABLED = True
 
 if 'test' in sys.argv:
 
