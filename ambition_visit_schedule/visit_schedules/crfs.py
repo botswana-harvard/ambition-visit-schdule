@@ -244,7 +244,7 @@ crfs_w10 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.followup'),
     Crf(show_order=2, model='ambition_subject.medicalexpenses'),
     Crf(show_order=3, model='ambition_subject.medicalexpensestwo'),
-    Crf(show_order=4, model='ambition_subject.studyterminationconclusion'),
+    #     Crf(show_order=4, model='ambition_subject.studyterminationconclusion'),
     #     Crf(show_order=5, model='ambition_subject.recurrencesymptom',
     #         required=False),
     Crf(show_order=6, model='ambition_subject.prnmodel'),

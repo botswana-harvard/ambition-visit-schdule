@@ -6,9 +6,17 @@ from ambition_labs import serum_panel, plasma_buffycoat_panel, csf_pkpd_panel, w
 from ambition_labs import viral_load_panel, cd4_panel, fbc_panel, csf_panel, qpcr_csf_panel
 from edc_visit_schedule import FormsCollection, Requisition
 
-requisitions = FormsCollection(Requisition(
-    show_order=50, model='ambition_subject.subjectrequisition',
-    panel=chemistry_panel, required=False, additional=False),)
+requisitions = FormsCollection(
+    Requisition(
+        show_order=10, model='ambition_subject.subjectrequisition',
+        panel=chemistry_panel, required=False, additional=False),
+    Requisition(
+        show_order=20, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    Requisition(
+        show_order=30, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
+)
 
 requisitions_d1 = FormsCollection(
     Requisition(
@@ -77,12 +85,24 @@ requisitions_d3 = FormsCollection(
     Requisition(
         show_order=30, model='ambition_subject.subjectrequisition',
         panel=qpcr_blood_panel, required=True, additional=False),
+    Requisition(
+        show_order=40, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    Requisition(
+        show_order=50, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
 )
 
 requisitions_other = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
         panel=chemistry_panel, required=True, additional=False),
+    Requisition(
+        show_order=20, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    Requisition(
+        show_order=30, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
 )
 
 requisitions_d7 = FormsCollection(
@@ -125,6 +145,12 @@ requisitions_d7 = FormsCollection(
     Requisition(
         show_order=130, model='ambition_subject.subjectrequisition',
         panel=pk_plasma_panel_t23, required=True, additional=False),
+    Requisition(
+        show_order=140, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    Requisition(
+        show_order=150, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
 )
 
 requisitions_d14 = FormsCollection(
@@ -152,6 +178,12 @@ requisitions_d14 = FormsCollection(
     Requisition(
         show_order=90, model='ambition_subject.subjectrequisition',
         panel=qpcr_blood_panel, required=True, additional=False),
+    Requisition(
+        show_order=100, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    Requisition(
+        show_order=110, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
 )
 
 requisitions_w4 = FormsCollection(
@@ -161,4 +193,10 @@ requisitions_w4 = FormsCollection(
     Requisition(
         show_order=20, model='ambition_subject.subjectrequisition',
         panel=chemistry_alt_panel, required=True, additional=False),
+    Requisition(
+        show_order=30, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    Requisition(
+        show_order=40, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
 )
