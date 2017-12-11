@@ -13,20 +13,7 @@ crfs_d1 = FormsCollection(
     Crf(show_order=9, model='ambition_subject.prnmodel'),
     Crf(show_order=10, model='ambition_subject.microbiology', required=False),
     Crf(show_order=11, model='ambition_subject.radiology', required=False),
-    #     Crf(show_order=9, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=10, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=11, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=14, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=15, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=16, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=17, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=18, model='ambition_subject.recurrencesymptom',
-    #         required=False),
+    name='day1'
 )
 
 crfs_d3 = FormsCollection(
@@ -36,20 +23,7 @@ crfs_d3 = FormsCollection(
     Crf(show_order=4, model='ambition_subject.radiology', required=False),
     Crf(show_order=5, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=3, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=8, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.recurrencesymptom',
-    #         required=False)
+    name='day3'
 )
 
 crfs_d5 = FormsCollection(
@@ -59,20 +33,7 @@ crfs_d5 = FormsCollection(
     Crf(show_order=4, model='ambition_subject.radiology', required=False),
     Crf(show_order=5, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=3, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=8, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.recurrencesymptom',
-    #         required=False),
+    name='day5'
 )
 
 crfs_d7 = FormsCollection(
@@ -82,20 +43,7 @@ crfs_d7 = FormsCollection(
     Crf(show_order=4, model='ambition_subject.microbiology', required=False),
     Crf(show_order=5, model='ambition_subject.radiology', required=False),
     Crf(show_order=6, model='ambition_subject.pkpdcrf'),
-    #     Crf(show_order=4, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=6, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=9, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.recurrencesymptom',
-    #         required=False)
+    name='day7'
 )
 
 crfs_d10 = FormsCollection(
@@ -105,21 +53,7 @@ crfs_d10 = FormsCollection(
     Crf(show_order=4, model='ambition_subject.radiology', required=False),
     Crf(show_order=5, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=3, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=8, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.deathreport',
-    #         required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.recurrencesymptom',
-    #         required=False),
+    name='day10'
 )
 
 crfs_d12 = FormsCollection(
@@ -129,20 +63,7 @@ crfs_d12 = FormsCollection(
     Crf(show_order=4, model='ambition_subject.radiology', required=False),
     Crf(show_order=5, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=3, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=8, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.recurrencesymptom',
-    #         required=False),
+    name='day12'
 )
 
 crfs_d14 = FormsCollection(
@@ -153,20 +74,7 @@ crfs_d14 = FormsCollection(
     Crf(show_order=5, model='ambition_subject.microbiology', required=False),
     Crf(show_order=6, model='ambition_subject.radiology', required=False),
     Crf(show_order=7, model='ambition_subject.pkpdcrf'),
-    #     Crf(show_order=5, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=6, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=7, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=14, model='ambition_subject.recurrencesymptom',
-    #         required=False),
+    name='day14'
 )
 
 crfs_w4 = FormsCollection(
@@ -177,22 +85,7 @@ crfs_w4 = FormsCollection(
     Crf(show_order=5, model='ambition_subject.radiology', required=False),
     Crf(show_order=6, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=4, model='ambition_subject.recurrencesymptom',
-    #         required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=6, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=7, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=13, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=14, model='ambition_subject.deathreporttmg2',
-    #         required=False),
-    #     Crf(show_order=15, model='ambition_subject.recurrencesymptom',
-    #         required=False),
+    name='week4'
 )
 
 crfs_w6 = FormsCollection(
@@ -203,20 +96,7 @@ crfs_w6 = FormsCollection(
     Crf(show_order=6, model='ambition_subject.radiology', required=False),
     Crf(show_order=7, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=2, model='ambition_subject.recurrencesymptom',
-    #         required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=6, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=13, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=14, model='ambition_subject.deathreporttmg2',
-    #         required=False),
+    name='week6'
 )
 
 crfs_w8 = FormsCollection(
@@ -229,18 +109,7 @@ crfs_w8 = FormsCollection(
     Crf(show_order=6, model='ambition_subject.radiology', required=False),
     Crf(show_order=7, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=5, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=6, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreport', required=False),
-    #     Crf(show_order=13, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=14, model='ambition_subject.deathreporttmg2',
-    #         required=False),
+    name='week8'
 )
 
 crfs_w10 = FormsCollection(
@@ -253,27 +122,12 @@ crfs_w10 = FormsCollection(
     Crf(show_order=7, model='ambition_subject.radiology', required=False),
     Crf(show_order=8, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=4, model='ambition_subject.studyterminationconclusion'),
-    #     Crf(show_order=5, model='ambition_subject.recurrencesymptom',
-    #         required=False),
-    #     Crf(show_order=7, model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=8, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=9, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=13, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=15, model='ambition_subject.deathreport',
-    #         required=False),
-    #     Crf(show_order=16, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=17, model='ambition_subject.deathreporttmg2',
-    #         required=False)
+    name='week10'
 )
 
 crfs_w16 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.week16'),
-    #     Crf(show_order=2, model='ambition_subject.deathreport', required=False),
+    name='week16'
 )
 
 crfs_unscheduled = FormsCollection(
@@ -286,18 +140,5 @@ crfs_unscheduled = FormsCollection(
         required=False),
     Crf(show_order=5, model='ambition_subject.lumbarpuncturecsf',
         required=False),
-    #     Crf(show_order=2,
-    #         model='ambition_subject.adverseevent', required=False),
-    #     Crf(show_order=3, model='ambition_subject.adverseeventtmg',
-    #         required=False),
-    #     Crf(show_order=4, model='ambition_subject.adverseeventfollowup',
-    #         required=False),
-    #     Crf(show_order=8, model='ambition_subject.protocoldeviationviolation',
-    #         required=False),
-    #     Crf(show_order=10, model='ambition_subject.deathreport',
-    #         required=False),
-    #     Crf(show_order=11, model='ambition_subject.deathreporttmg1',
-    #         required=False),
-    #     Crf(show_order=12, model='ambition_subject.deathreporttmg2',
-    #         required=False),
+    name='unscheduled'
 )
