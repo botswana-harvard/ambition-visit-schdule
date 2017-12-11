@@ -1,6 +1,8 @@
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit
 
+from ..constants import DAY1, DAY3, DAY5, DAY7, DAY14, DAY12, DAY10
+from ..constants import WEEK16, WEEK10, WEEK8, WEEK6, WEEK4
 from .crfs import (
     crfs_d5, crfs_d1, crfs_d3, crfs_d7, crfs_d10, crfs_d12, crfs_d14,
     crfs_w4, crfs_w6, crfs_w8, crfs_w10, crfs_w16, crfs_unscheduled)
@@ -17,7 +19,7 @@ schedule = Schedule(
 )
 
 visit0 = Visit(
-    code='1000',
+    code=DAY1,
     title='Day 1',
     timepoint=0,
     rbase=relativedelta(days=0),
@@ -32,7 +34,7 @@ visit0 = Visit(
 )
 
 visit1 = Visit(
-    code='1003',
+    code=DAY3,
     title='Day 3',
     timepoint=1,
     rbase=relativedelta(days=2),
@@ -46,7 +48,7 @@ visit1 = Visit(
 )
 
 visit2 = Visit(
-    code='1005',
+    code=DAY5,
     title='Day 5',
     timepoint=2,
     rbase=relativedelta(days=4),
@@ -60,7 +62,7 @@ visit2 = Visit(
 )
 
 visit3 = Visit(
-    code='1007',
+    code=DAY7,
     title='Day 7',
     timepoint=3,
     rbase=relativedelta(days=6),
@@ -74,7 +76,7 @@ visit3 = Visit(
 )
 
 visit4 = Visit(
-    code='1010',
+    code=DAY10,
     title='Day 10',
     timepoint=4,
     rbase=relativedelta(days=9),
@@ -88,7 +90,7 @@ visit4 = Visit(
 )
 
 visit5 = Visit(
-    code='1012',
+    code=DAY12,
     title='Day 12',
     timepoint=5,
     rbase=relativedelta(days=11),
@@ -102,7 +104,7 @@ visit5 = Visit(
 )
 
 visit6 = Visit(
-    code='1014',
+    code=DAY14,
     title='Day 14',
     timepoint=6,
     rbase=relativedelta(days=13),
@@ -116,7 +118,7 @@ visit6 = Visit(
     allow_unscheduled=True)
 
 visit7 = Visit(
-    code='1028',
+    code=WEEK4,
     title='Week 4',
     timepoint=7,
     rbase=relativedelta(weeks=4),
@@ -130,7 +132,7 @@ visit7 = Visit(
     allow_unscheduled=True)
 
 visit8 = Visit(
-    code='1042',
+    code=WEEK6,
     title='Week 6',
     timepoint=8,
     rbase=relativedelta(weeks=6),
@@ -144,7 +146,7 @@ visit8 = Visit(
     allow_unscheduled=True)
 
 visit9 = Visit(
-    code='1056',
+    code=WEEK8,
     title='Week 8',
     timepoint=9,
     rbase=relativedelta(weeks=8),
@@ -158,7 +160,7 @@ visit9 = Visit(
     allow_unscheduled=True)
 
 visit10 = Visit(
-    code='1070',
+    code=WEEK10,
     title='Week 10',
     timepoint=10,
     rbase=relativedelta(weeks=10),
@@ -172,7 +174,7 @@ visit10 = Visit(
     allow_unscheduled=True)
 
 visit16 = Visit(
-    code='1112',
+    code=WEEK16,
     title='Week 16',
     timepoint=16,
     rbase=relativedelta(weeks=16),
