@@ -16,6 +16,12 @@ requisitions = FormsCollection(
     Requisition(
         show_order=30, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
+    Requisition(
+        show_order=40, model='ambition_subject.subjectrequisition',
+        panel=chemistry_alt_panel, required=False, additional=False),
+    Requisition(
+        show_order=50, model='ambition_subject.subjectrequisition',
+        panel=fbc_panel, required=False, additional=False),
 )
 
 requisitions_d1 = FormsCollection(
@@ -91,6 +97,12 @@ requisitions_d3 = FormsCollection(
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
+    Requisition(
+        show_order=60, model='ambition_subject.subjectrequisition',
+        panel=chemistry_alt_panel, required=False, additional=False),
+    Requisition(
+        show_order=70, model='ambition_subject.subjectrequisition',
+        panel=fbc_panel, required=False, additional=False),
 )
 
 requisitions_other = FormsCollection(
@@ -103,6 +115,12 @@ requisitions_other = FormsCollection(
     Requisition(
         show_order=30, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
+    Requisition(
+        show_order=40, model='ambition_subject.subjectrequisition',
+        panel=chemistry_alt_panel, required=False, additional=False),
+    Requisition(
+        show_order=50, model='ambition_subject.subjectrequisition',
+        panel=fbc_panel, required=False, additional=False),
 )
 
 requisitions_d7 = FormsCollection(
@@ -199,4 +217,10 @@ requisitions_w4 = FormsCollection(
     Requisition(
         show_order=40, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
+    Requisition(
+        show_order=50, model='ambition_subject.subjectrequisition',
+        panel=chemistry_alt_panel, required=False, additional=False),
+    Requisition(
+        show_order=60, model='ambition_subject.subjectrequisition',
+        panel=fbc_panel, required=False, additional=False),
 )
