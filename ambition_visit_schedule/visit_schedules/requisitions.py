@@ -9,18 +9,15 @@ from edc_visit_schedule import FormsCollection, Requisition
 requisitions = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
-        panel=chemistry_panel, required=False, additional=False),
-    Requisition(
-        show_order=20, model='ambition_subject.subjectrequisition',
         panel=viral_load_panel, required=False, additional=False),
     Requisition(
-        show_order=30, model='ambition_subject.subjectrequisition',
+        show_order=20, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
     Requisition(
-        show_order=40, model='ambition_subject.subjectrequisition',
+        show_order=30, model='ambition_subject.subjectrequisition',
         panel=chemistry_alt_panel, required=False, additional=False),
     Requisition(
-        show_order=50, model='ambition_subject.subjectrequisition',
+        show_order=40, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
 )
 
@@ -84,7 +81,7 @@ requisitions_d1 = FormsCollection(
 requisitions_d3 = FormsCollection(
     Requisition(
         show_order=10, model='ambition_subject.subjectrequisition',
-        panel=chemistry_panel, required=True, additional=False),
+        panel=chemistry_alt_panel, required=True, additional=False),
     Requisition(
         show_order=20, model='ambition_subject.subjectrequisition',
         panel=plasma_buffycoat_panel, required=True, additional=False),
@@ -97,9 +94,6 @@ requisitions_d3 = FormsCollection(
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
-    Requisition(
-        show_order=60, model='ambition_subject.subjectrequisition',
-        panel=chemistry_alt_panel, required=False, additional=False),
     Requisition(
         show_order=70, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
@@ -219,8 +213,5 @@ requisitions_w4 = FormsCollection(
         panel=cd4_panel, required=False, additional=False),
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
-        panel=chemistry_alt_panel, required=False, additional=False),
-    Requisition(
-        show_order=60, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
 )
