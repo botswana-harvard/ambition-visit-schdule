@@ -9,7 +9,7 @@ from .requisitions import requisitions
 schedule1 = Schedule(
     name='schedule1',
     title='Ambition',
-    enrollment_model='ambition_subject.enrollment_w10',
+    enrollment_model='ambition_subject.enrollmentw10',
     disenrollment_model='ambition_subject.disenrollment',
 )
 
