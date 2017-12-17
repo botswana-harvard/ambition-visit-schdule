@@ -23,6 +23,7 @@ visit_schedule_w10 = VisitSchedule(
     offstudy_model=f'ambition_ae.studyterminationconclusion',
     previous_visit_schedule=None)
 
-visit_schedule.add_schedule(schedule_w10)
+visit_schedule_w10.add_schedule(schedule_w10)
 
 site_visit_schedules.register(visit_schedule)
+site_visit_schedules.register(visit_schedule_w10)

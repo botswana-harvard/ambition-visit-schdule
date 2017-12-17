@@ -39,7 +39,7 @@ requisitions_d1 = FormsCollection(
         panel=csf_chemistry_panel, required=True, additional=False),
     Requisition(
         show_order=60, model='ambition_subject.subjectrequisition',
-        panel=csf_pkpd_panel, required=True, additional=False),
+        panel=csf_pkpd_panel, required=False, additional=False),
     Requisition(
         show_order=70, model='ambition_subject.subjectrequisition',
         panel=qpcr_csf_panel, required=True, additional=False),
@@ -63,19 +63,19 @@ requisitions_d1 = FormsCollection(
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
         show_order=140, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t2, required=True, additional=False),
+        panel=pk_plasma_panel_t2, required=False, additional=False),
     Requisition(
         show_order=150, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t4, required=True, additional=False),
+        panel=pk_plasma_panel_t4, required=False, additional=False),
     Requisition(
         show_order=160, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t7, required=True, additional=False),
+        panel=pk_plasma_panel_t7, required=False, additional=False),
     Requisition(
         show_order=170, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t12, required=True, additional=False),
+        panel=pk_plasma_panel_t12, required=False, additional=False),
     Requisition(
         show_order=180, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t23, required=True, additional=False),
+        panel=pk_plasma_panel_t23, required=False, additional=False),
 )
 
 requisitions_d3 = FormsCollection(
@@ -129,7 +129,7 @@ requisitions_d7 = FormsCollection(
         panel=csf_panel, required=True, additional=False),
     Requisition(
         show_order=40, model='ambition_subject.subjectrequisition',
-        panel=csf_pkpd_panel, required=True, additional=False),
+        panel=csf_pkpd_panel, required=False, additional=False),
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
         panel=qpcr_csf_panel, required=True, additional=False),
@@ -144,19 +144,19 @@ requisitions_d7 = FormsCollection(
         panel=qpcr_blood_panel, required=True, additional=False),
     Requisition(
         show_order=90, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t2, required=True, additional=False),
+        panel=pk_plasma_panel_t2, required=False, additional=False),
     Requisition(
         show_order=100, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t4, required=True, additional=False),
+        panel=pk_plasma_panel_t4, required=False, additional=False),
     Requisition(
         show_order=110, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t7, required=True, additional=False),
+        panel=pk_plasma_panel_t7, required=False, additional=False),
     Requisition(
         show_order=120, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t12, required=True, additional=False),
+        panel=pk_plasma_panel_t12, required=False, additional=False),
     Requisition(
         show_order=130, model='ambition_subject.subjectrequisition',
-        panel=pk_plasma_panel_t23, required=True, additional=False),
+        panel=pk_plasma_panel_t23, required=False, additional=False),
     Requisition(
         show_order=140, model='ambition_subject.subjectrequisition',
         panel=viral_load_panel, required=False, additional=False),
@@ -177,7 +177,7 @@ requisitions_d14 = FormsCollection(
         panel=csf_panel, required=True, additional=False),
     Requisition(
         show_order=40, model='ambition_subject.subjectrequisition',
-        panel=csf_pkpd_panel, required=True, additional=False),
+        panel=csf_pkpd_panel, required=False, additional=False),
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
         panel=qpcr_csf_panel, required=True, additional=False),
