@@ -6,8 +6,8 @@ from .crfs import crfs_w10, crfs_w16, crfs_unscheduled
 from .requisitions import requisitions
 
 # schedule for terminated participants.
-schedule1 = Schedule(
-    name='schedule1',
+schedule_w10 = Schedule(
+    name='schedule_w10',
     title='Ambition',
     enrollment_model='ambition_subject.enrollment_w10',
     disenrollment_model='ambition_subject.disenrollment',
@@ -41,5 +41,5 @@ visit16 = Visit(
     requisitions_unscheduled=requisitions,
 )
 
-schedule1.add_visit(visit=visit10)
-schedule1.add_visit(visit=visit16)
+schedule_w10.add_visit(visit=visit10)
+schedule_w10.add_visit(visit=visit16)

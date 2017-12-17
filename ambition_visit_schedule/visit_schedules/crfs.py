@@ -101,8 +101,6 @@ crfs_w6 = FormsCollection(
 
 crfs_w8 = FormsCollection(
     Crf(show_order=1, model='ambition_subject.followup'),
-    Crf(show_order=2, model='ambition_subject.recurrencesymptom',
-        required=False),
     Crf(show_order=3, model='ambition_subject.prnmodel'),
     Crf(show_order=4, model='ambition_subject.bloodresult', required=False),
     Crf(show_order=5, model='ambition_subject.microbiology', required=False),
