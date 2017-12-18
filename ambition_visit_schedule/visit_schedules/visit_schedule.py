@@ -10,7 +10,7 @@ visit_schedule = VisitSchedule(
     verbose_name='Ambition',
     app_label='ambition_subject',
     visit_model=f'ambition_subject.subjectvisit',
-    offstudy_model=f'ambition_ae.studyterminationconclusion',
+    offstudy_model=f'ambition_prn.studyterminationconclusion',
     previous_visit_schedule=None)
 
 visit_schedule.add_schedule(schedule)
@@ -20,7 +20,7 @@ visit_schedule_w10 = VisitSchedule(
     verbose_name='Ambition (W10 follow-up)',
     app_label='ambition_subject',
     visit_model=f'ambition_subject.subjectvisit',
-    offstudy_model=f'ambition_ae.studyterminationconclusion',
+    offstudy_model=f'ambition_prn.studyterminationconclusion',
     previous_visit_schedule=None)
 
 visit_schedule_w10.add_schedule(schedule_w10)
