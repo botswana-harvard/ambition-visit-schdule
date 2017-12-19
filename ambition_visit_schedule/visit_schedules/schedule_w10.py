@@ -7,10 +7,10 @@ from .requisitions import requisitions
 
 # schedule for terminated participants.
 schedule_w10 = Schedule(
-    name='schedule_w10',
+    name='schedule',
     title='Ambition',
-    enrollment_model='ambition_subject.enrollmentw10',
-    disenrollment_model='ambition_subject.disenrollment',
+    enrollment_model='ambition_prn.enrollmentw10',
+    disenrollment_model='ambition_prn.disenrollment',
 )
 
 visit10 = Visit(
