@@ -9,8 +9,8 @@ from .requisitions import requisitions
 schedule_w10 = Schedule(
     name='schedule',
     title='Ambition',
-    enrollment_model='ambition_prn.enrollmentw10',
-    disenrollment_model='ambition_prn.disenrollment',
+    onschedule_model='ambition_prn.onschedulew10',
+    offschedule_model='ambition_prn.offschedulew10',
 )
 
 visit10 = Visit(

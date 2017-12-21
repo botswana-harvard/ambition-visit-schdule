@@ -14,8 +14,8 @@ from .requisitions import (requisitions, requisitions_d1, requisitions_d3,
 schedule = Schedule(
     name='schedule',
     title='Ambition',
-    enrollment_model='ambition_prn.enrollment',
-    disenrollment_model='ambition_prn.disenrollment',
+    onschedule_model='ambition_prn.onschedule',
+    offschedule_model='ambition_prn.offschedule',
 )
 
 visit0 = Visit(
