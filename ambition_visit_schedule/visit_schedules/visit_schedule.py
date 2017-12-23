@@ -8,9 +8,8 @@ app_label = 'ambition_subject'
 visit_schedule = VisitSchedule(
     name='visit_schedule',
     verbose_name='Ambition',
-    app_label='ambition_subject',
-    visit_model=f'ambition_subject.subjectvisit',
     offstudy_model=f'ambition_prn.studyterminationconclusion',
+    death_report_model=f'ambition_prn.deathreport',
     previous_visit_schedule=None)
 
 visit_schedule.add_schedule(schedule)
@@ -18,9 +17,8 @@ visit_schedule.add_schedule(schedule)
 visit_schedule_w10 = VisitSchedule(
     name='visit_schedule_w10',
     verbose_name='Ambition (W10 follow-up)',
-    app_label='ambition_subject',
-    visit_model=f'ambition_subject.subjectvisit',
     offstudy_model=f'ambition_prn.studyterminationconclusion',
+    death_report_model=f'ambition_prn.deathreport',
     previous_visit_schedule=None)
 
 visit_schedule_w10.add_schedule(schedule_w10)

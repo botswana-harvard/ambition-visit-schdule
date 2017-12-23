@@ -10,8 +10,9 @@ schedule_w10 = Schedule(
     name='schedule',
     title='Ambition',
     onschedule_model='ambition_prn.onschedulew10',
-    offschedule_model='ambition_prn.offschedulew10',
-)
+    offschedule_model='ambition_prn.studyterminationconclusionw10',
+    consent_model='ambition_subject.subjectconsent',
+    appointment_model='edc_appointment.appointment')
 
 visit10 = Visit(
     code=WEEK10,

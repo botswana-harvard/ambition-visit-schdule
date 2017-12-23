@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'ambition_labs.apps.AppConfig',
     'ambition_visit_schedule.apps.AppConfig',
 ]
 
@@ -121,14 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-VISIT_SCHEDULE_APP_LABEL = APP_NAME
-
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-KEY_PATH = os.path.join(BASE_DIR, 'crypto_fields')
-GIT_DIR = BASE_DIR
 
 if 'test' in sys.argv:
 

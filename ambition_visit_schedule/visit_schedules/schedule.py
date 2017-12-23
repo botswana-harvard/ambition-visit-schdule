@@ -15,8 +15,9 @@ schedule = Schedule(
     name='schedule',
     title='Ambition',
     onschedule_model='ambition_prn.onschedule',
-    offschedule_model='ambition_prn.offschedule',
-)
+    offschedule_model='ambition_prn.studyterminationconclusion',
+    consent_model='ambition_subject.subjectconsent',
+    appointment_model='edc_appointment.appointment')
 
 visit0 = Visit(
     code=DAY1,
@@ -30,8 +31,7 @@ visit0 = Visit(
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
     facility_name='7-day clinic',
-    allow_unscheduled=True,
-)
+    allow_unscheduled=True)
 
 visit1 = Visit(
     code=DAY3,
@@ -44,8 +44,7 @@ visit1 = Visit(
     crfs=crfs_d3,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-)
+    facility_name='7-day clinic')
 
 visit2 = Visit(
     code=DAY5,
@@ -58,8 +57,7 @@ visit2 = Visit(
     crfs=crfs_d5,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-)
+    facility_name='7-day clinic')
 
 visit3 = Visit(
     code=DAY7,
@@ -72,8 +70,7 @@ visit3 = Visit(
     crfs=crfs_d7,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-)
+    facility_name='7-day clinic')
 
 visit4 = Visit(
     code=DAY10,
@@ -86,8 +83,7 @@ visit4 = Visit(
     crfs=crfs_d10,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-)
+    facility_name='7-day clinic')
 
 visit5 = Visit(
     code=DAY12,
@@ -100,8 +96,7 @@ visit5 = Visit(
     crfs=crfs_d12,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic'
-)
+    facility_name='7-day clinic')
 
 visit6 = Visit(
     code=DAY14,
@@ -184,8 +179,7 @@ visit16 = Visit(
     crfs=crfs_w16,
     crfs_unscheduled=crfs_unscheduled,
     facility_name='5-day clinic',
-    requisitions_unscheduled=requisitions,
-)
+    requisitions_unscheduled=requisitions)
 
 schedule.add_visit(visit=visit0)
 schedule.add_visit(visit=visit1)
