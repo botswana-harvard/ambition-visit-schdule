@@ -16,7 +16,7 @@ visit_schedule.add_schedule(schedule)
 
 visit_schedule_w10 = VisitSchedule(
     name='visit_schedule_w10',
-    verbose_name='Ambition (W10 follow-up)',
+    verbose_name='Ambition W10',
     offstudy_model=f'ambition_prn.studyterminationconclusion',
     death_report_model=f'ambition_prn.deathreport',
     previous_visit_schedule=None)

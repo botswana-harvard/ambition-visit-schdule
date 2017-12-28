@@ -13,7 +13,7 @@ from .requisitions import (requisitions, requisitions_d1, requisitions_d3,
 # schedule for new participants
 schedule = Schedule(
     name='schedule',
-    title='Ambition',
+    verbose_name='Day 1 to Week 16 Follow-up',
     onschedule_model='ambition_prn.onschedule',
     offschedule_model='ambition_prn.studyterminationconclusion',
     consent_model='ambition_subject.subjectconsent',

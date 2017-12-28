@@ -8,7 +8,7 @@ from .requisitions import requisitions
 # schedule for terminated participants.
 schedule_w10 = Schedule(
     name='schedule',
-    title='Ambition',
+    verbose_name='Week 10 to Week 16 Follow-up',
     onschedule_model='ambition_prn.onschedulew10',
     offschedule_model='ambition_prn.studyterminationconclusionw10',
     consent_model='ambition_subject.subjectconsent',
