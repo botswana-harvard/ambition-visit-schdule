@@ -10,6 +10,7 @@ visit_schedule = VisitSchedule(
     verbose_name='Ambition',
     offstudy_model=f'ambition_prn.studyterminationconclusion',
     death_report_model=f'ambition_prn.deathreport',
+    locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None)
 
 visit_schedule.add_schedule(schedule)
@@ -19,6 +20,7 @@ visit_schedule_w10 = VisitSchedule(
     verbose_name='Ambition W10',
     offstudy_model=f'ambition_prn.studyterminationconclusion',
     death_report_model=f'ambition_prn.deathreport',
+    locator_model='edc_locator.subjectlocator',
     previous_visit_schedule=None)
 
 visit_schedule_w10.add_schedule(schedule_w10)
