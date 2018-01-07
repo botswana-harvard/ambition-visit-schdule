@@ -44,7 +44,8 @@ visit1 = Visit(
     crfs=crfs_d3,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic')
+    facility_name='7-day clinic',
+    allow_unscheduled=True)
 
 visit2 = Visit(
     code=DAY5,
@@ -57,7 +58,8 @@ visit2 = Visit(
     crfs=crfs_d5,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic')
+    facility_name='7-day clinic',
+    allow_unscheduled=True)
 
 visit3 = Visit(
     code=DAY7,
@@ -70,7 +72,8 @@ visit3 = Visit(
     crfs=crfs_d7,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic')
+    facility_name='7-day clinic',
+    allow_unscheduled=True)
 
 visit4 = Visit(
     code=DAY10,
@@ -83,7 +86,8 @@ visit4 = Visit(
     crfs=crfs_d10,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic')
+    facility_name='7-day clinic',
+    allow_unscheduled=True)
 
 visit5 = Visit(
     code=DAY12,
@@ -96,7 +100,8 @@ visit5 = Visit(
     crfs=crfs_d12,
     crfs_unscheduled=crfs_unscheduled,
     requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic')
+    facility_name='7-day clinic',
+    allow_unscheduled=True)
 
 visit6 = Visit(
     code=DAY14,
@@ -178,8 +183,9 @@ visit16 = Visit(
     requisitions=requisitions,
     crfs=crfs_w16,
     crfs_unscheduled=crfs_unscheduled,
+    requisitions_unscheduled=requisitions,
     facility_name='5-day clinic',
-    requisitions_unscheduled=requisitions)
+    allow_unscheduled=True)
 
 schedule.add_visit(visit=visit0)
 schedule.add_visit(visit=visit1)
