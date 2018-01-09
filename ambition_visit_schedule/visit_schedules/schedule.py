@@ -1,14 +1,31 @@
 from dateutil.relativedelta import relativedelta
-from edc_visit_schedule import Schedule, Visit
+from edc_visit_schedule import Schedule, Visit as BaseVisit
 
 from ..constants import DAY1, DAY3, DAY5, DAY7, DAY14, DAY12, DAY10
 from ..constants import WEEK16, WEEK10, WEEK8, WEEK6, WEEK4
 from .crfs import (
     crfs_d5, crfs_d1, crfs_d3, crfs_d7, crfs_d10, crfs_d12, crfs_d14,
-    crfs_w4, crfs_w6, crfs_w8, crfs_w10, crfs_w16, crfs_unscheduled)
+    crfs_w4, crfs_w6, crfs_w8, crfs_w10, crfs_w16,
+    crfs_prn as default_crfs_prn,
+    crfs_unscheduled as default_crfs_unscheduled)
 from .requisitions import (requisitions, requisitions_d1, requisitions_d3,
                            requisitions_d7, requisitions_w4, requisitions_d14,
-                           requisitions_other)
+                           requisitions_other,
+                           requisitions_prn as default_requisitions_prn)
+
+
+class Visit(BaseVisit):
+    def __init__(self, crfs_unscheduled=None, requisitions_unscheduled=None,
+                 crfs_prn=None, requisitions_prn=None,
+                 allow_unscheduled=None, **kwargs):
+        super().__init__(
+            crfs_prn=crfs_prn or default_crfs_prn,
+            requisitions_prn=requisitions_prn or default_requisitions_prn,
+            allow_unscheduled=True if allow_unscheduled is None else allow_unscheduled,
+            crfs_unscheduled=crfs_unscheduled or default_crfs_unscheduled,
+            requisitions_unscheduled=requisitions_unscheduled or requisitions,
+            **kwargs)
+
 
 # schedule for new participants
 schedule = Schedule(
@@ -19,6 +36,7 @@ schedule = Schedule(
     consent_model='ambition_subject.subjectconsent',
     appointment_model='edc_appointment.appointment')
 
+
 visit0 = Visit(
     code=DAY1,
     title='Day 1',
@@ -28,10 +46,7 @@ visit0 = Visit(
     rupper=relativedelta(days=0),
     crfs=crfs_d1,
     requisitions=requisitions_d1,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit1 = Visit(
     code=DAY3,
@@ -42,10 +57,7 @@ visit1 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_d3,
     crfs=crfs_d3,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit2 = Visit(
     code=DAY5,
@@ -56,10 +68,7 @@ visit2 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_other,
     crfs=crfs_d5,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit3 = Visit(
     code=DAY7,
@@ -70,10 +79,7 @@ visit3 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_d7,
     crfs=crfs_d7,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit4 = Visit(
     code=DAY10,
@@ -84,10 +90,7 @@ visit4 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_other,
     crfs=crfs_d10,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit5 = Visit(
     code=DAY12,
@@ -98,10 +101,7 @@ visit5 = Visit(
     rupper=relativedelta(days=0),
     requisitions=requisitions_other,
     crfs=crfs_d12,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit6 = Visit(
     code=DAY14,
@@ -112,10 +112,7 @@ visit6 = Visit(
     rupper=relativedelta(days=6),
     requisitions=requisitions_d14,
     crfs=crfs_d14,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='7-day clinic',
-    allow_unscheduled=True)
+    facility_name='7-day clinic')
 
 visit7 = Visit(
     code=WEEK4,
@@ -126,10 +123,7 @@ visit7 = Visit(
     rupper=relativedelta(days=6),
     requisitions=requisitions_w4,
     crfs=crfs_w4,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='5-day clinic',
-    allow_unscheduled=True)
+    facility_name='5-day clinic')
 
 visit8 = Visit(
     code=WEEK6,
@@ -140,10 +134,7 @@ visit8 = Visit(
     rupper=relativedelta(days=6),
     requisitions=requisitions,
     crfs=crfs_w6,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='5-day clinic',
-    allow_unscheduled=True)
+    facility_name='5-day clinic')
 
 visit9 = Visit(
     code=WEEK8,
@@ -154,10 +145,7 @@ visit9 = Visit(
     rupper=relativedelta(days=6),
     requisitions=requisitions,
     crfs=crfs_w8,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='5-day clinic',
-    allow_unscheduled=True)
+    facility_name='5-day clinic')
 
 visit10 = Visit(
     code=WEEK10,
@@ -168,10 +156,7 @@ visit10 = Visit(
     rupper=relativedelta(days=6),
     requisitions=requisitions,
     crfs=crfs_w10,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='5-day clinic',
-    allow_unscheduled=True)
+    facility_name='5-day clinic')
 
 visit16 = Visit(
     code=WEEK16,
@@ -182,10 +167,7 @@ visit16 = Visit(
     rupper=relativedelta(days=6),
     requisitions=requisitions,
     crfs=crfs_w16,
-    crfs_unscheduled=crfs_unscheduled,
-    requisitions_unscheduled=requisitions,
-    facility_name='5-day clinic',
-    allow_unscheduled=True)
+    facility_name='5-day clinic')
 
 schedule.add_visit(visit=visit0)
 schedule.add_visit(visit=visit1)

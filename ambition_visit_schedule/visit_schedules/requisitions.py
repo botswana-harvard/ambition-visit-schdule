@@ -19,6 +19,7 @@ requisitions = FormsCollection(
     Requisition(
         show_order=40, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
+    name='requisitions'
 )
 
 requisitions_d1 = FormsCollection(
@@ -76,6 +77,7 @@ requisitions_d1 = FormsCollection(
     Requisition(
         show_order=180, model='ambition_subject.subjectrequisition',
         panel=pk_plasma_panel_t23, required=False, additional=False),
+    name='requisitions_day1'
 )
 
 requisitions_d3 = FormsCollection(
@@ -97,6 +99,7 @@ requisitions_d3 = FormsCollection(
     Requisition(
         show_order=70, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
+    name='requisitions_day3'
 )
 
 requisitions_other = FormsCollection(
@@ -115,6 +118,7 @@ requisitions_other = FormsCollection(
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
+    name='requisitions_other'
 )
 
 requisitions_d7 = FormsCollection(
@@ -163,6 +167,7 @@ requisitions_d7 = FormsCollection(
     Requisition(
         show_order=150, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
+    name='requisitions_day7'
 )
 
 requisitions_d14 = FormsCollection(
@@ -196,6 +201,7 @@ requisitions_d14 = FormsCollection(
     Requisition(
         show_order=110, model='ambition_subject.subjectrequisition',
         panel=cd4_panel, required=False, additional=False),
+    name='requisitions_day14'
 )
 
 requisitions_w4 = FormsCollection(
@@ -214,4 +220,22 @@ requisitions_w4 = FormsCollection(
     Requisition(
         show_order=50, model='ambition_subject.subjectrequisition',
         panel=fbc_panel, required=False, additional=False),
+    name='requisitions_week4'
+)
+
+
+requisitions_prn = FormsCollection(
+    Requisition(
+        show_order=10, model='ambition_subject.subjectrequisition',
+        panel=cd4_panel, required=False, additional=False),
+    Requisition(
+        show_order=20, model='ambition_subject.subjectrequisition',
+        panel=chemistry_alt_panel, required=True, additional=False),
+    Requisition(
+        show_order=30, model='ambition_subject.subjectrequisition',
+        panel=fbc_panel, required=False, additional=False),
+    Requisition(
+        show_order=40, model='ambition_subject.subjectrequisition',
+        panel=viral_load_panel, required=False, additional=False),
+    name='requisitions_prn'
 )
