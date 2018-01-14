@@ -1,4 +1,4 @@
-from ambition_labs.labs import chemistry_panel
+from ambition_labs.panels import chemistry_panel
 from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
 from edc_visit_schedule.visit.forms_collection import FormsCollection
