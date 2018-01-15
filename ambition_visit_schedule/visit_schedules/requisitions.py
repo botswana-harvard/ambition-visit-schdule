@@ -5,7 +5,6 @@ from ambition_labs import qpcr_blood_panel, csf_stop_panel
 from ambition_labs import serum_panel, plasma_buffycoat_panel, csf_pkpd_panel, wb_panel
 from ambition_labs import viral_load_panel, cd4_panel, fbc_panel, csf_panel, qpcr_csf_panel
 from edc_visit_schedule import FormsCollection, Requisition
-from edc_lab.site_labs import site_labs
 
 
 requisitions_prn = FormsCollection(
