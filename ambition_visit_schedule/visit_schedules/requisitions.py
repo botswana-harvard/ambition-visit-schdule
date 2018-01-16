@@ -26,6 +26,9 @@ requisitions_prn = FormsCollection(
     Requisition(
         show_order=60,
         panel=csf_chemistry_panel, required=False, additional=False),
+    Requisition(
+        show_order=70,
+        panel=csf_panel, required=False, additional=False),
     name='requisitions_prn')
 
 requisitions_d1 = FormsCollection(
