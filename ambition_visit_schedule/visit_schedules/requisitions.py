@@ -52,7 +52,7 @@ requisitions_d1 = FormsCollection(
         panel=qpcr_csf_panel, required=True, additional=False),
     Requisition(
         show_order=70,
-        panel=csf_stop_panel, required=True, additional=False),
+        panel=csf_stop_panel, required=False, additional=False),
     Requisition(
         show_order=80,
         panel=wb_panel, required=True, additional=False),
@@ -120,7 +120,7 @@ requisitions_d7 = FormsCollection(
         panel=qpcr_csf_panel, required=True, additional=False),
     Requisition(
         show_order=70,
-        panel=csf_stop_panel, required=True, additional=False),
+        panel=csf_stop_panel, required=False, additional=False),
     Requisition(
         show_order=80,
         panel=plasma_buffycoat_panel, required=True, additional=False),
@@ -177,7 +177,7 @@ requisitions_d14 = FormsCollection(
         panel=qpcr_csf_panel, required=True, additional=False),
     Requisition(
         show_order=70,
-        panel=csf_stop_panel, required=True, additional=False),
+        panel=csf_stop_panel, required=False, additional=False),
     Requisition(
         show_order=80,
         panel=plasma_buffycoat_panel, required=True, additional=False),
